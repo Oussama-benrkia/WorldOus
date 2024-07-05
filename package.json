@@ -1,5 +1,6 @@
 {
-  "name": "search",
+  "homepage":"https://github.com/Oussama-benrkia/WorldOus",
+  "name": "WorldOus",
   "private": true,
   "version": "0.0.0",
   "type": "module",
