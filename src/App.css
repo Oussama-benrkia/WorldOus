@@ -5,7 +5,7 @@
 }
 
 .search-bar-container {
-  padding-top: 20vh;
+  padding-top: 25vh;
   width: 40%;
   margin: auto;
   display: flex;
@@ -17,5 +17,6 @@
   position:fixed;
   top: 0px;
   width: 30%;
-  margin: 30px; /* Adjust the spacing as needed */
+  margin: 30px; 
+  margin-bottom: 30px;
 }

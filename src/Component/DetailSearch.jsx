@@ -1,4 +1,3 @@
-import React from 'react';
 import './Modal.css';
 
 const DetailSearch = ({ isOpen, onClose, result }) => {
@@ -21,7 +20,25 @@ const DetailSearch = ({ isOpen, onClose, result }) => {
           {result.coatOfArms.svg && (
             <img src={result.coatOfArms.svg} alt={result.flags.alt} style={{ marginBottom: '10px' }} />
           )}
-          <img src={result.flags.svg} alt={result.flags.alt} style={{ width: '100%', marginBottom: '10px' }} />
+        {result.flags.svg ? (
+          <img
+            src={result.flags.svg}
+            alt={result.flags.alt}
+            style={{ marginBottom: '10px' }}
+          />
+        ) : (
+          <div class="dot-spinner">
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+          </div>
+        )}
+
         </div>
         <div className="text-container">
           <h2>{result.name.official}</h2>
