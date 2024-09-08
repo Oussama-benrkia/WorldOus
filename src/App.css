@@ -13,10 +13,39 @@
   align-items: center;
   min-width: 200px;
 }
+
 .search-bar-container .logo {
-  position:fixed;
+  position: fixed;
   top: 0px;
   width: 30%;
-  margin: 30px; 
+  margin: 30px;
   margin-bottom: 30px;
+}
+
+.github-icon {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 40px; /* Adjust to position the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(69, 69, 69);
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 100;
+  opacity: 0.8;
 }
